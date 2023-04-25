@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      li strong {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>JavaScript Strings,Math,Arrays and Loops.</h1>
+    <ul>
+      <li>Paris</li>
+      <li>Roma</li>
+      <li>Barcelona</li>
+      <li>Lisbon</li>
+    </ul>
+
+    <h1>JS Objects</h1>
+    <img
+      src="https://www.tabnine.com/academy/wp-content/uploads/2020/10/academy_3.png"
+    />
+    <h1>JA Arrays vs Objects</h1>
+    <script>
+      // STRINGS
+      //  let firstName = prompt("What is your first name?").trim();
+      //  if (firstName.length > 0) {
+      //    alert("Welcome, " + firstName + " !");
+      //   } else {
+      //    alert("Too bad for you");
+      //  }
+
+      //   let city = "Monreal";
+      //   let country = "Canada Canada";
+      //   console.log("From", city);
+      //   country = country.trim().replace(" ", "-").toUpperCase();
+      //   let sentence = `I live in ${city},${country} !`;
+      //   console.log(sentence);
+
+      //   MATH
+
+      // let number = 2.4;
+
+      // console.log(number);
+      // console.log(Math.ceil(number));
+      // console.log(Math.floor(number));
+      // console.log(Math.round(number));
+      // console.log(Math.min(2.6,2.8,1.9));
+      // console.log(Math.max(2.6,2.8,1.9));
+
+      // console.log(Math.random());
+
+      //   ARRAY AND LOOPS
+
+      //   function showCity(city) {
+      //     alert(city);
+      //   }
+
+      //   let cities = ["London", "Cape Town", "Berlin"];
+      //   cities.forEach(showCity);
+
+      // function showCity(cityElement){
+      //     console.log(cityElement.innerHTML);
+      //     cityElement.innerHTML=
+      //     "<em>" + cityElement.innerHTML + "</em>";
+      // }
+
+      // let cities = document.querySelectorAll("li");
+
+      // cities.forEach(showCity);
+
+      // OBJECTS
+
+      // let city = {
+      //     name:"Sydney",
+      //     country:"Australia",
+      //     population: 24.6
+      //     englishSpeaking: true,
+      // }
+
+      // console.log(city.name);
+      // console.log(city.population);
+
+      //    let cities = [
+      //   {
+      //        name:"Sydney",
+      //        country:"Australia",
+      //        population: 24.6
+
+      //   },
+
+      //    {
+      //        name:"Berlin",
+      //        country:"Germany",
+      //        population: 12,
+      //        englishSpeaking:false
+      //    },
+      //   {
+      //        name:"Mexico City",
+      //        country:"Mexico",
+      //        population: 20,
+      //        englishSpeaking:false
+      //   }
+
+      //    ];
+
+      //    console.log(cities[1].name);
+      //    console.log(cities[2].country);
+
+      //    if you need a spase betwen words add property in this way
+      // propertyName["property"]=3;
+
+      // let forecast = [
+      //     {
+      //         day:"Friday",
+      //         temp:19,
+      //     }
+      // ]
+
+      // let forecast = {
+      //     monday:17,
+      //     tuesday:18,
+      //     wednesday:19,
+      //     thursday:15,
+      //     friday:11,
+      //     saturday:10,
+      //     sunday:9,
+      // };
+      // console.log(forecast.thursday);
+
+      // Arrays vs Objects
+
+      // Array
+      // let temperature = [ 12,15,-5,0];
+      // let cities = [ "Lisbon","Paris","New York"];
+      // cities[0]="Milan";
+
+      // Objects- use if you need acces to your data;
+      let person = {
+        firstName: "Karina",
+        lastName: "Kvych",
+        height: 160,
+      };
+      person.firstName;
+      person["firstName"];
+      person = {
+        name: { first: "Karina", last: "Karina" },
+        hoobbies: ["Traveling", "Playing guitar"],
+      };
+      person.name;
+      persone.name.first;
+
+      //   to sho itichka pocazaw ! find metod
+      function button() {
+        let cityWeather = prompt("Enter a city", "City name")
+          .trim()
+          .toLowerCase();
+        if (cityWeather.length > 0) {
+          const result = weather.find((city) => city.name === cityWeather);
+          alert(
+            `It is currently ${result.temp}°C in ${result.name} with a humidity of ${result.humidity}`
+          );
+        } else {
+          alert(
+            "Sorry, we don't know the weather for this city, try going to https://www.google.com/search?q=weather+sydney"
+          );
+        }
+      }
+    </script>
+  </body>
+</html>

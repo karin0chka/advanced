@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SheCodes</title>
+    <style>
+      h1 {
+        color: #885df1;
+        text-align: center;
+        text-decoration: underline;
+      }
+      h2 {
+        color: #272044;
+        text-align: center;
+        font-size: xx-large;
+        font-weight: lighter;
+      }
+      button {
+        margin: 20px auto;
+        display: block;
+        color: #885df1;
+        font-size: 16px;
+        background: transparent;
+        padding: 15px 20px;
+        border-radius: 30px;
+        box-shadow: 2px 5px 2px rgb(224, 223, 223);
+        border: 1px solid #885df1;
+        transition: all 200ms ease-in-out;
+      }
+
+      button:hover {
+        background-color: #885df1;
+        color: white;
+        cursor: pointer;
+      }
+      body {
+        background-color: #f5f0fe;
+      }
+      .ul {
+        cursor: pointer !important;
+      }
+      .student {
+        color: blue;
+        text-decoration: none;
+      }
+      .cours {
+        color: red;
+        text-decoration: none;
+      }
+      .students-stories {
+        color: green;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      p {
+        text-align: center;
+      }
+      ul {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin: 0px auto;
+        padding: 0px;
+      }
+
+      li {
+        list-style-type: none;
+        text-decoration: none;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        width: 300px;
+      }
+      div {
+        text-align: center;
+        padding: 30px;
+        font-weight: bold;
+      }
+      .contact_us {
+        text-align: center;
+        font-size: 12px;
+        padding: 30px;
+        font-weight: 300;
+      }
+      .link_name {
+        color: #885df1;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>SheCodes</h1>
+    <h2>Coding Workshop</h2>
+    <button>Apply now</button>
+    <ul>
+      <li>
+        <a
+          href="https://www.shecodes.io/students"
+          target="_blank"
+          class="student"
+        >
+          Coders
+        </a>
+      </li>
+      <li>
+        <a
+          href=" https://www.shecodes.io/workshops"
+          target="_blank"
+          class="cours"
+        >
+          Courses
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.shecodes.io/stories"
+          target="_blank"
+          class="students-stories"
+        >
+          Stories
+        </a>
+      </li>
+    </ul>
+    <hr />
+    <div>More info</div>
+    <img
+      src="https://wearetechwomen.com/wp-content/uploads/2021/09/shutterstock_1687431796.jpg"
+      alt="Woman coding"
+    />
+    <div class="contact_us">
+      <span class="link_name">Email:</span>
+      <span>hello@shecodes.io</span>
+      <span class="link_name">Instagram:</span>
+      <span>@shecodes.io</span>
+    </div>
+    <script>
+      function contactUs() {
+        let name = prompt("What is your name ?");
+        let email = prompt("What is your email address ?");
+
+        let h1 = document.querySelector("h1");
+        h1.innerHTML = "<em> Thank you </em>" + name + " , we will be in touch!";
+      }
+      // buttons
+      let button = document.querySelector("button");
+      button.addEventListener("click", contactUs);
+    </script>
+  </body>
+</html>

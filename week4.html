@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<h1>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Js Functions</h1>
+    <h1>Js Functions Parameters</h1>
+    <h1>JS Debugging</h1>
+    <h1>JS Functions REturn</h1>
+    <script>
+        // Js Functions
+        function greetUser(name){
+            alert(name);
+
+        }
+        function welcomeUset(temperature,name){
+            greetUser(`Hello ${name}`);
+            if(temperature > 15) {
+                alert("It is a warm day today ");
+            }else {
+                alert("It is a cold day ");
+            }
+        }
+        // welcomeUset();
+
+        //  Js Functions Parameters
+       
+        welcomeUset(10, "John");
+
+
+
+        // JS Debugging
+        function welcomeUset(temperature,firstName) {
+            console.log(temperature < 15);
+            if (temperature < 15) {
+                alert ("It is a warm day today, " + firstName); 
+            }
+        }
+        debugger;
+        let users = {
+            firstName:"Matt",
+           lastName:"Anna"
+        };
+        console.table(users);
+        welcomeUset(20, "John");
+
+
+   
+    </script>
+</body>
+</html>
